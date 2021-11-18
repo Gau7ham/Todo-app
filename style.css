@@ -7,6 +7,8 @@
 
 body{
     font-family: 'Josefin Sans',sans-serif;
+    background-color: hsl(235, 21%, 11%);
+    font-size: 10px;
     display: flex;
     justify-content: center;
 
@@ -56,8 +58,46 @@ body{
     border-radius: 6px;
     display: flex;
 }
-
+ 
 .check{
-    background-color: yellow;
     width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.check-mark:hover{
+    background: linear-gradient(135deg, #55DDFF 0%, #C058F3 10%);
+}
+
+.check-mark{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid hsl(237, 14%, 26%);
+    cursor: pointer;
+}
+
+.new-todo-input{
+    flex-grow: 1;
+    display: flex;
+    align-items:  center;
+}
+
+.new-todo-input form{
+    flex-grow: 1;
+}
+
+.new-todo-input input{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: hsl(235, 39%, 85%);
+    font-size: 19px;
+}
+
+.new-todo-input input::placeholder{
+    color: hsl(233,14%,35%)
 }

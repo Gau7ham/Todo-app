@@ -1,0 +1,7 @@
+git status
+git init
+git add .
+git commit -m "first commit"
+git remote add origin (website)
+git branch -M main(master)
+git push -u orgin main(master)
